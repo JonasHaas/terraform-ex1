@@ -56,7 +56,6 @@ resource "aws_route_table" "nf_public_route_table" {
 resource "aws_route_table_association" "nf_public_subnet_association" {
   subnet_id      = aws_subnet.nf_public_subnet.id
   route_table_id = aws_route_table.nf_public_route_table.id
-
 }
 
 # Config Security Group
@@ -98,4 +97,9 @@ resource "aws_instance" "nf_some_instance" {
     Name = "Terraform VPC > EC2"
     Context = "NF-Bootcamp"
   }
+}
+
+## outputs the ip after creation
+output "public_ip" {
+  value = aws_instance.nf_some_instance.public_ip
 }
