@@ -13,6 +13,8 @@ The following files are included in this example:
 
 To use this example, follow these steps:
 
+before completing the steps below, go and create a s3 bucket with the name '' in the managment console
+
 1. Clone this repository to your local machine.
 2. Initialize the Terraform environment by running `terraform init`.
 3. Apply the configuration by running `terraform apply` or `terraform apply -auto-approve` if you trust the configuration.

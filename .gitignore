@@ -1,3 +1,4 @@
-.terraform
-.terraform*
+backup
+/terraform/.terraform
+/terraform/.terraform*
 *.pem
